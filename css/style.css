@@ -204,6 +204,10 @@ span.logo {
 display: none;
 }
 
+.logo_desk a, .logo_mob a {
+    color: black;
+}
+
 .menu {
     border-top: solid #dcdcdc 1px;
     border-bottom: solid #dcdcdc 1px;
