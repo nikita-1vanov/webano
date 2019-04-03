@@ -153,9 +153,17 @@ h1 {
     font-family: Antonellie;
 }
 
+a.logo_desk {
+text-decoration: none;
+}
+
 .logo_mob {
     font-size: 80px;
     font-family: Antonellie;
+}
+
+a.logo_mob {
+text-decoration: none;
 }
 
 span.logo {
