@@ -1,0 +1,660 @@
+/*---------Шрифты----------*/
+
+@font-face {
+    font-family: "Arial";
+    src:url(../fonts/arial.ttf);
+}
+
+@font-face {
+    font-family: "Times";
+    src:url(../fonts/Times.ttf);
+}
+
+@font-face {
+    font-family: "Antonellie";
+    src:url(../fonts/Antonellie.otf);
+}
+
+/*---------Цвет шрифта----------*/
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: grey;
+}
+
+/*---------Цвет фона----------*/
+
+.bc_ellow {
+    background-color: blanchedalmond;
+}
+
+
+
+/*---------Семантика----------*/
+
+html {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+
+    max-width: 1920px;
+    min-width: 680px;
+    height: 100%;
+
+    font-family: "Arial";
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin: auto;
+}
+
+.header {
+    background: url(../image/fon1.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    flex-grow:1;
+    z-index: 1;
+}
+
+footer {
+    border-top: solid #dcdcdc 2px;
+}
+
+.container {
+    padding-left: 12%;
+    padding-right:13%;
+    width: 75%;
+    height: auto;
+}
+
+.container_text {
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 60%;
+    height: auto;
+}
+
+
+
+/*---------FLEX----------*/
+
+.flex, .flex_recomends {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flex_centr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+/*---------Тексты----------*/
+
+h1 {
+    font-size: 45px;
+    margin: 20px 0 20px 0 ;
+    line-height: 50px;
+}
+
+.zag_offer {
+    font-size: 20px;
+}
+
+.zag_page {
+    font-size: 24px;
+    margin: 50px 0 0 0;
+    text-align: left;
+    text-indent: 55px;
+}
+
+.desc, .offer_info {
+    font-size: 16px;
+}
+
+.info_mag {
+    padding-bottom: 20px;
+}
+
+.logo_desk {
+    font-size: 36px;
+    margin: 15px 0 15px 0;
+    font-family: Antonellie;
+}
+
+.logo_mob {
+    font-size: 80px;
+    font-family: Antonellie;
+}
+
+span.logo {
+    color: grey;
+}
+
+.text_page {
+    text-indent: 55px;
+    font-size: 18px;
+}
+
+.check_page {
+    font-size: 18px;
+}
+
+.day_page_up, .day_page_down {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.day_page_down {
+    display: none;
+}
+
+/*---------Атрибуты текстов----------*/
+
+.b {
+    font-weight: bold;
+}
+
+.i {
+    font-style: italic;
+}
+
+.text_centr {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+/*---------Меню----------*/
+
+.logo_mob {
+display: none;
+}
+
+.menu {
+    border-top: solid #dcdcdc 1px;
+    border-bottom: solid #dcdcdc 1px;
+    padding: 7px 0 7px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 6px 20px 6px 20px;
+    color: black;
+    border: solid  #dcdcdc 1px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: blanchedalmond;
+}
+
+.menu p {
+    margin: 10px 0 10px 0;
+}
+
+.block_menu {
+    border: solid #dcdcdc 1px;
+    width: 180px;
+}
+
+.block_menu a {
+    text-decoration: none;
+    padding: 6px 20px 6px 20px;
+    color: black;
+    font-size: 15px;
+    width: 180px;
+}
+
+.block_menu p:hover {
+    background-color: blanchedalmond;
+}
+
+
+.vipad_menu {
+    border-bottom: solid #dcdcdc 1px;
+    padding: 10px 0 10px 0;
+    display: none;
+}
+
+.vipad_menu button {
+    padding: 6px 20px 6px 20px;
+    border: solid #dcdcdc 1px;
+    font-size: 15px;
+    background-color: white;
+    width: 180px
+}
+
+button:hover {
+    background-color: blanchedalmond;
+}
+
+
+
+/*---------Каталог----------*/
+
+.offers {
+    padding-bottom: 30px;
+}
+
+.offer {
+    width: 23%;
+    margin: 50px 20px 0 20px;
+    min-width: 220px;
+    cursor: pointer;
+}
+
+.offer:hover .zag_offer {
+    color: red;
+}
+
+.offer img {
+    width: 100%;
+}
+
+
+
+/*---------Рекомендации----------*/
+
+.recomends {
+    padding-bottom: 30px;
+}
+
+.recomend {
+    width: 23%;
+    margin: 50px 20px 0 20px;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.recomend img {
+    width: 100%;
+}
+
+
+
+/*---------Футер----------*/
+
+footer img {
+    width: 40px;
+    padding: 20px 7px 20px 7px;
+    cursor: pointer;
+}
+
+footer img:hover {
+    width: 50px;
+    padding: 15px 2px 15px 2px;
+}
+
+footer p {
+    font-size: 12px;
+    color: grey;
+    margin: 0;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+
+
+/*---------Чек-боксы---------*/
+
+div.checkbox {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #aaa;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0 1px 0 0 rgba(255, 255, 255, .8);
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: left;
+    line-height: 15px;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+/*---------Медиа запросы Ширина экрана до 1100px----------*/
+
+@media screen and (max-width: 1100px) {
+
+    .container_text {
+        padding-left: 12%;
+        padding-right: 13%;
+        width: 75%;
+        height: auto;
+    }
+
+    .flex_recomends {
+        display: block;
+    }
+
+   .recomend {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px 0 0 0;
+   }    
+
+   .recomend img {
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 35px;
+   }
+
+   p.desc {
+    max-width: 350px;
+    text-align: left;
+   }
+}
+
+
+
+/*---------Медиа запросы Ширина экрана до 900px----------*/
+
+@media screen and (max-width: 900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .vipad_menu {
+        display: block;
+    }
+
+    .logo_desk {
+        text-align: left;
+    }
+}
+
+
+/*---------Медиа запросы Ширина экрана до 720px----------*/
+
+@media screen and (max-width: 720px) {
+
+    header {
+        text-align: center;
+    }
+
+    .offer {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 400px;
+    }
+
+    .offer img {
+        width: 80%;
+    }
+
+    .logo_desk_glav {
+        text-align: center;
+    }
+
+}
+
+/*---------Медиа запросы Мобильная версия----------*/
+
+@media screen and (max-device-width: 480px) {
+
+
+
+    /*---Семантика---*/
+
+    .header {
+        background: none;
+        padding-bottom: 0;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+
+
+    /*---Текст---*/
+
+    h1 {
+        text-align: center;
+        line-height: 70px;
+        color: black;
+        font-size: 70px;
+        margin: 35px 0 35px 0;
+    }
+
+    .zag_page {
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        line-height: 1.1;
+    }
+
+    .zag, .zag_offer {
+        font-size: 50px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .desc, .offer_info, .text_page {
+        color: black;
+        margin-bottom: 45px;
+        font-size: 35px;
+    }
+
+    .check_page {
+        color: black;
+        margin-bottom: 45px;
+        font-size: 35px;
+        padding-left: 75px;
+    }
+
+
+    p.desc {
+        max-width: 500px;
+        font-size: 32px;
+    }
+
+    .info_mag {
+        display: none;
+    }
+
+    .day_page_up {
+        display: none;
+    }
+
+
+
+    /*---Меню---*/
+
+    .logo_desk {
+    display: none;
+    }
+
+    .logo_mob {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .vipad_menu {
+        display: block;
+    }
+
+    .vipad_menu {
+        border-bottom: solid #dcdcdc 1px;
+        padding: 30px 0 30px 0;
+    }
+
+    .vipad_menu button {
+        padding: 20px 20px 20px 20px;
+        border: solid #dcdcdc 3px;
+        border-radius: 10px;
+        font-size: 38px;
+        width: 450px
+    }
+
+    .block_menu {
+        border: solid #dcdcdc 3px;
+        width: 450px;
+        z-index: 2;
+    }
+
+    .block_menu a {
+        font-size: 38px;
+        width: 450px;
+
+    }
+
+    .block_menu p {
+        font-size: 38px;
+        width: 450px;
+        padding: 15px 0 15px 0;
+    }
+
+
+
+    /*---Каталог---*/
+
+    .offer {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 850px;
+        margin-top: 60px;
+    }
+
+    .offer img {
+        width: 75%;
+    }
+
+
+
+    /*---Футер---*/
+
+    footer img {
+        width: 80px;
+    }
+
+    footer img:hover {
+        width: 90px;
+    }
+
+    footer p {
+        font-size: 27px;
+    }
+
+    .smm {
+        border-top: solid grey  2px;
+        margin-bottom: 10px;
+    }
+
+
+
+    /*---Рекомендации---*/
+
+    .recomend img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 35px;
+    }
+
+
+    /*---------Чек-боксы---------*/
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 15px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    label:before {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    input[type=checkbox]:checked + label:before {
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+        font-size: 90px;
+        padding-top: 10px;
+    }
+
+}
