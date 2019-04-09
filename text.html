@@ -23,42 +23,67 @@
 
     <body>
 
-        <nav class="container">
+    <nav class="container">
 
-            <div class="text_centr logo_desk">
-                <p><a href="https://nikita-1vanov.github.io/webano/">WEB<span class="logo">ano</span></a></p>
-            </div>
+        <div class="vipad_menu_mob">
+            <div class="flex_between">
+                <div style="position: relative; z-index: 2;">
+                    <div>
+                        <button href="#" id="but_box_mob"  style="display: block">Выбрать раздел   ▼</button>
+                        <button href="#" id="but_box_mob2" style="display: none">Выбрать раздел   ▲</button>
+                    </div>
 
-            <div class="menu flex_centr">
-                <p><a href="#" id="box" style="background-color: white">Для маркетологов</a></p>
-                <p><a href="#" id="box2" style="background-color: white">Для программистов</a></p>
-                <p><a href="#" id="box3" style="background-color: white">Для дизайнеров</a></p>
-                <p><a href="#" id="box4" style="background-color: white">Для аналитиков</a></p>
-            </div>
-
-            <div class="vipad_menu">
-                <div class="flex_between">
-                    <button href="#" id="but_box"  style="display: block">Выбрать раздел   ▼</button>
-                    <button href="#" id="but_box2" style="display: none">Выбрать раздел   ▲</button>
-                    <p class="logo_mob"><a href="https://nikita-1vanov.github.io/webano/">WEB<span class="logo">ano</span></a></p>
+                    <div id="but_block_mob" class="block_menu" style="display: none; position: absolute; top: 100%">
+                        <p><a href="marketing">Для маркетологов</a></p>
+                        <p><a href="web">Для программистов</a></p>
+                        <p><a href="design">Для дизайнеров</a></p>
+                        <p><a href="analytics">Для аналитиков</a></p>
+                    </div>
                 </div>
+                <p class="logo_mob">WEB<span class="logo">ano</span></p>
             </div>
+        </div>
 
-            <div id="but_block" class="block_menu" style="display: none">
-                <p><a href="#">Для маркетологов</a></p>
-                <p><a href="#">Для программистов</a></p>
-                <p><a href="#">Для дизайнеров</a></p>
-                <p><a href="#">Для аналитиков</a></p>
-            </div>
-        </nav>
+        <div class="text_centr logo_desk">
+            <p><a href="https://nikita-1vanov.github.io/webano/">WEB<span class="logo">ano</span></a></p>
+        </div>
 
-        <header>
-            <div class="flex_between container_text">
-                <p class="day_page_up grey i">18.03.2019</p>
-                <p class="day_page_up grey i">Время чтения 7 минут</p>
-            </div>
-            <h1 class="text_centr container_text">Красивое название статьи с SEO оптимизацией и другими плюшками</h1>
-        </header>
+        <div class="menu flex_centr">
+            <p><a href="marketing" id="box" style="background-color: white">Для маркетологов</a></p>
+            <p><a href="web" id="box2" style="background-color: white">Для программистов</a></p>
+            <p><a href="design" id="box3" style="background-color: white">Для дизайнеров</a></p>
+            <p><a href="analytics" id="box4" style="background-color: white">Для аналитиков</a></p>
+        </div>
+
+        <div class="vipad_menu">
+            <div class="flex_between">
+                <div style="position: relative; z-index: 2;">
+
+                    <div>
+                        <button href="#" id="but_box"  style="display: block">Выбрать раздел   ▼</button>
+                        <button href="#" id="but_box2" style="display: none">Выбрать раздел   ▲</button>
+                    </div>
+
+                    <div id="but_block" class="block_menu" style="display: none; position: absolute; top: 100%">
+                        <p><a href="marketing">Для маркетологов</a></p>
+                        <p><a href="web">Для программистов</a></p>
+                        <p><a href="design">Для дизайнеров</a></p>
+                        <p><a href="analytics">Для аналитиков</a></p>
+                    </div>
+
+                </div>
+                    <p class="logo_mob">WEB<span class="logo">ano</span></p>
+                </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="flex_between container_text">
+            <p class="day_page_up grey i">18.03.2019</p>
+            <p class="day_page_up grey i">Время чтения 7 минут</p>
+        </div>
+        <h1 class="text_centr container_text">Красивое название статьи с SEO оптимизацией и другими плюшками</h1>
+    </header>
 
     <main>
         <div class="container_text">
