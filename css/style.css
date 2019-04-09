@@ -333,13 +333,13 @@ button:hover {
 
 footer img {
     width: 40px;
-    padding: 20px 7px 20px 7px;
+    padding: 15px 7px 5px 7px;
     cursor: pointer;
 }
 
 footer img:hover {
     width: 50px;
-    padding: 15px 2px 15px 2px;
+    padding: 10px 2px 0 2px;
 }
 
 footer p {
