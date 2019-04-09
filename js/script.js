@@ -5,25 +5,36 @@ document.querySelector('#but_box').addEventListener('click', function () {
         if(display == "block") {
             document.getElementById('but_box').style.display="none";
             document.getElementById('but_box2').style.display="block";
-        } else {
-            document.getElementById('but_box2').style.display="none";
-            document.getElementById('but_box').style.display="block";
         }
     }
 );
 
 document.querySelector('#but_box2').addEventListener('click', function () {
-    display = document.getElementById('but_box2').style.display;
-        if(display == "block") {
-            document.getElementById('but_box2').style.display="none";
-            document.getElementById('but_box').style.display="block";
-        } else {
-            document.getElementById('but_box').style.display="none";
-            document.getElementById('but_box2').style.display="block";
+        display = document.getElementById('but_box2').style.display;
+        if (display == "block") {
+            document.getElementById('but_box2').style.display = "none";
+            document.getElementById('but_box').style.display = "block";
         }
     }
 );
 
+document.querySelector('#but_box_mob').addEventListener('click', function () {
+        display = document.getElementById('but_box').style.display;
+        if(display == "block") {
+            document.getElementById('but_box_mob').style.display="none";
+            document.getElementById('but_box_mob2').style.display="block";
+        }
+    }
+);
+
+document.querySelector('#but_box_mob2').addEventListener('click', function () {
+        display = document.getElementById('but_box_mob2').style.display;
+        if (display == "block") {
+            document.getElementById('but_box_mob2').style.display = "none";
+            document.getElementById('but_box_mob').style.display = "block";
+        }
+    }
+);
 
 
 /*----------Появление/исчезновение блока меню при нажатии кнопки "Выбрать меню"----------*/
@@ -44,6 +55,26 @@ document.querySelector('#but_box2').addEventListener('click', function () {
             document.getElementById('but_block').style.display="none";
         } else {
             document.getElementById('but_block').style.display="block";
+        }
+    }
+);
+
+document.querySelector('#but_box_mob').addEventListener('click', function () {
+        display = document.getElementById('but_block_mob').style.display;
+        if(display == "none") {
+            document.getElementById('but_block_mob').style.display="block";
+        } else {
+            document.getElementById('but_block_mob').style.display="none";
+        }
+    }
+);
+
+document.querySelector('#but_box_mob2').addEventListener('click', function () {
+        display = document.getElementById('but_block_mob').style.display;
+        if(display == "block") {
+            document.getElementById('but_block_mob').style.display="none";
+        } else {
+            document.getElementById('but_block_mob').style.display="block";
         }
     }
 );
