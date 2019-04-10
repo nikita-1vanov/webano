@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-    background: url(../image/fon1.jpg) no-repeat;
+    background: url(../image/fon1.png) no-repeat;
     background-size: cover;
     padding-bottom: 50px;
 }
@@ -125,6 +125,14 @@ footer {
 
 
 /*---------Тексты----------*/
+
+a {
+    color: black;
+}
+
+.logo_desk_glav a{
+    color: white;
+}
 
 h1 {
     font-size: 45px;
