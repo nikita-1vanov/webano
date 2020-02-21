@@ -20,18 +20,23 @@
     src:url(../fonts/Stolzl-Medium.otf);
 }
 
+@font-face {
+    font-family: "StolzLight";
+    src:url(../fonts/StolzLight.otf);
+}
+
 /*---------Цвет шрифта----------*/
 
 .white {
     color: white;
 }
 
-.grey {
-    color: grey;
-}
-
 .black {
     color: black;
+}
+
+.green {
+    color: #60ff00;
 }
 
 /*---------Цвет фона----------*/
@@ -89,9 +94,9 @@ footer {
 }
 
 .container {
-    padding-left: 12%;
-    padding-right:13%;
-    width: 75%;
+    padding-left: 5%;
+    padding-right:5%;
+    width: 90%;
     height: auto;
 }
 
@@ -141,22 +146,28 @@ footer {
 
 /*---------Тексты----------*/
 
-a {
-    color: black;
-}
 
 .logo_desk_glav a{
     color: white;
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 36 px;
     margin: 20px 0 20px 0 ;
     line-height: 50px;
 }
 
+.offers p {
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .zag_offer {
-    font-size: 20px;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
 }
 
 .zag_page {
@@ -166,8 +177,8 @@ h1 {
     text-indent: 55px;
 }
 
-.desc, .offer_info {
-    font-size: 16px;
+.desc, .data, button {
+    font-family: StolzLight;
 }
 
 .info_mag {
@@ -176,18 +187,13 @@ h1 {
 
 .logo_desk {
     font-size: 72px;
-    margin: 120px 0 15px 0;
+    margin: 40px 0 15px 0;
     /*font-family: Antonellie;*/
 }
 
 .logo_mob {
     font-size: 70px;
-    /*font-family: Antonellie;*/
-}
-
-span.logo {
-    color: grey;
-}
+}   
 
 .text_page {
     text-indent: 55px;
@@ -235,35 +241,22 @@ display: none;
     display: none;
 }
 
-/*.logo_desk a, .logo_mob a {*/
-/*    color: black;*/
-/*}*/
-
 .menu_mob {
     position: relative;
 }
 
-.menu {
-    border-top: solid #dcdcdc 1px;
-    border-bottom: solid #dcdcdc 1px;
-    padding: 7px 0 7px 0;
-}
 
 .menu a {
     text-decoration: none;
-    padding: 6px 20px 6px 20px;
-    color: black;
-    border: solid  #dcdcdc 1px;
-    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
     text-align: center;
+    color: white;
+    margin: 40px 0 30px 0;
 }
 
 .menu a:hover {
-    background-color: blanchedalmond;
-}
-
-.menu p {
-    margin: 10px 0 10px 0;
+    color: #60ff00;
 }
 
 .block_menu {
@@ -274,20 +267,9 @@ display: none;
 .block_menu a {
     text-decoration: none;
     padding: 6px 20px 6px 20px;
-    color: black;
     font-size: 15px;
     width: 180px;
 }
-
-.block_menu p {
-    background-color: white;
-}
-
-.block_menu p:hover {
-    background-color: blanchedalmond;
-}
-
-
 
 .vipad_menu, .vipad_menu_mob {
 
@@ -296,17 +278,13 @@ display: none;
     display: none;
 }
 
-.vipad_menu button, .vipad_menu_mob button {
+/*.vipad_menu button, .vipad_menu_mob button {
     padding: 6px 20px 6px 20px;
     border: solid #dcdcdc 1px;
     font-size: 15px;
     background-color: white;
     width: 180px;
-}
-
-button:hover {
-    background-color: blanchedalmond;
-}
+}*/
 
 
 
@@ -317,21 +295,46 @@ button:hover {
 }
 
 .offer {
-    width: 23%;
+    width: 26%;
     margin: 50px 20px 0 20px;
     min-width: 220px;
     cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px grey;
 }
 
-.offer:hover .zag_offer {
-    color: red;
+button:hover {
+    background-color: red;
+    
+}
+
+.offer:hover {
+background: rgba(0,0,0,0.1);
+}
+
+
+.offer:hover div.offer_text{
+    display: none;
 }
 
 .offer img {
     width: 100%;
 }
 
-
+button {
+    text-align: center;
+    color: white;
+    width: 70%;
+    background-color: #60ff00;
+    border: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 40px;
+    font-size: 14px;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 /*---------Рекомендации----------*/
 
@@ -423,14 +426,6 @@ input[type=checkbox]:checked + label:before {
     line-height: 15px;
     font-weight: bold;
     margin-left: -10px;
-}
-
-@media screen and (max-width: 1700px) {
-
-    .zag_offer {
-        font-size: 18px;
-        line-height: 1.3;
-    }
 }
 
 
