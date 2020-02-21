@@ -15,6 +15,11 @@
     src:url(../fonts/Antonellie.otf);
 }
 
+@font-face {
+    font-family: "StolzlMedium";
+    src:url(../fonts/Stolzl-Medium.otf);
+}
+
 /*---------Цвет шрифта----------*/
 
 .white {
@@ -51,7 +56,7 @@ body {
     min-width: 680px;
     height: 100%;
 
-    font-family: "Arial";
+    font-family: "StolzlMedium", sans-serif;
     color: black;
     font-size: 20px;
     line-height: 1.5;
@@ -60,9 +65,9 @@ body {
 }
 
 .header {
-    background: url(../image/fon1.png) no-repeat;
+    background-color: black;
     background-size: cover;
-    padding-bottom: 50px;
+    text-align: center;
 }
 
 nav {
@@ -77,7 +82,10 @@ main {
 }
 
 footer {
-    border-top: solid #dcdcdc 2px;
+    /*background: url(../image/footer.png) no-repeat;
+    background-size: cover;
+    min-height: 150px;*/
+    background-color: black;
 }
 
 .container {
@@ -94,7 +102,14 @@ footer {
     height: auto;
 }
 
+.gorizont {
+    width: 100%;
+    background-color: black;
+}
 
+.gorizont_footer {
+    width: 100%;
+}
 
 /*---------FLEX----------*/
 
@@ -135,7 +150,7 @@ a {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 38px;
     margin: 20px 0 20px 0 ;
     line-height: 50px;
 }
@@ -160,14 +175,14 @@ h1 {
 }
 
 .logo_desk {
-    font-size: 36px;
-    margin: 15px 0 15px 0;
-    font-family: Antonellie;
+    font-size: 72px;
+    margin: 120px 0 15px 0;
+    /*font-family: Antonellie;*/
 }
 
 .logo_mob {
     font-size: 70px;
-    font-family: Antonellie;
+    /*font-family: Antonellie;*/
 }
 
 span.logo {
@@ -333,6 +348,7 @@ button:hover {
 
 .recomend img {
     width: 100%;
+    height: 100%
 }
 
 
@@ -360,8 +376,6 @@ footer p {
 .info {
     margin-bottom: 15px;
 }
-
-
 
 /*---------Чек-боксы---------*/
 
@@ -683,6 +697,7 @@ input[type=checkbox]:checked + label:before {
     .smm {
         border-top: solid grey  2px;
         margin-bottom: 10px;
+        margin-top: 50px;
     }
 
 
