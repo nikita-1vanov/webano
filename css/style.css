@@ -126,6 +126,14 @@ footer {
     flex-wrap: wrap;
 }
 
+.flex_stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 .flex_centr {
     display: flex;
     align-items: center;
@@ -291,14 +299,6 @@ display: none;
     display: none;
 }
 
-/*.vipad_menu button, .vipad_menu_mob button {
-    padding: 6px 20px 6px 20px;
-    border: solid #dcdcdc 1px;
-    font-size: 15px;
-    background-color: white;
-    width: 180px;
-}*/
-
 
 
 /*---------Каталог----------*/
@@ -322,9 +322,14 @@ background: rgba(0,0,0,0.1);
 }
 
 .glav_text_post {
-    width: 35%;
+    width: 40%;
     text-align: center;
 }
+
+.glav_text_post p {
+    padding: 0 20px;
+}
+
 
 .glav_text_post button{
     margin-top: 80px;
@@ -336,7 +341,7 @@ background: rgba(0,0,0,0.1);
 }
 
 .offer {
-    width: 26%;
+    width: 28%;
     margin: 50px 20px 0 20px;
     min-width: 220px;
     cursor: pointer;
@@ -351,11 +356,6 @@ button:hover {
 
 .offer:hover {
 background: rgba(0,0,0,0.1);
-}
-
-
-.offer:hover div.offer_text{
-    display: none;
 }
 
 .offer img {
@@ -474,6 +474,16 @@ input[type=checkbox]:checked + label:before {
 
 @media screen and (max-width: 1100px) {
 
+    .offer {
+        width: 40%
+    }
+
+    .text-razdel{
+        text-transform: uppercase;
+        /*font-family: StolzMedium;*/
+        font-size: 36px;
+    }
+
     .container_text {
         padding-left: 12%;
         padding-right: 13%;
@@ -501,44 +511,6 @@ input[type=checkbox]:checked + label:before {
 
 }
 
-
-
-/*---------Медиа запросы Ширина экрана до 900px----------*/
-
-@media screen and (max-width: 900px) {
-
-}
-
-
-/*---------Медиа запросы Ширина экрана до 720px----------*/
-
-@media screen and (max-width: 720px) {
-
-    header {
-        text-align: center;
-    }
-
-    .offer {
-        margin-left: 0;
-        margin-right: 0;
-        min-width: 400px;
-    }
-
-    .zag_offer {
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-    .offer img {
-        width: 80%;
-    }
-
-    .logo_desk_glav {
-        text-align: center;
-    }
-
-}
-
 /*---------Медиа запросы Мобильная версия----------*/
 
 @media screen and (max-device-width: 480px) {
@@ -548,7 +520,6 @@ input[type=checkbox]:checked + label:before {
     /*---Семантика---*/
 
     .header {
-        background: none;
         padding-bottom: 0;
     }
 
@@ -569,27 +540,21 @@ input[type=checkbox]:checked + label:before {
     h1 {
         text-align: center;
         line-height: 70px;
-        color: black;
         font-size: 70px;
+        margin-bottom: 80px;
     }
 
-    .zag_page {
-        font-size: 50px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        line-height: 1.1;
-    }
-
-    .zag, .zag_offer {
+    .offers p {
         font-size: 45px;
-        margin-bottom: 0;
-        margin-top: 10px;
+        color: black;
+        text-align: left;
+        margin-left: 70px;
+        margin-right: 70px;
     }
 
-    .desc, .offer_info, .text_page {
-        color: black;
-        margin-bottom: 45px;
-        font-size: 35px;
+    .zag_offer {
+        margin: 40px 0 25px 0;
+        text-transform: uppercase;
     }
 
     .check_page {
@@ -597,20 +562,6 @@ input[type=checkbox]:checked + label:before {
         margin-bottom: 45px;
         font-size: 35px;
         padding-left: 75px;
-    }
-
-
-    p.desc {
-        max-width: 500px;
-        font-size: 32px;
-    }
-
-    .info_mag {
-        display: none;
-    }
-
-    .day_page_up {
-        display: none;
     }
 
 
@@ -627,34 +578,13 @@ input[type=checkbox]:checked + label:before {
 
     p.logo_mob {
         color: black;
-        padding-right: 30px;
+        font-size: 100px;
+        margin: 50px 0;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .vipad_menu_mob {
-        display: block;
-    }
-
-    .vipad_menu {
-        display: none;
-    }
-
-    .vipad_menu_mob {
-        border-bottom: solid #dcdcdc 1px;
-        padding: 30px 0 30px 0;
-    }
-
-    .vipad_menu_mob button {
-        padding: 20px 20px 20px 20px;
-        border: solid #dcdcdc 3px;
-        border-radius: 10px;
-        font-size: 38px;
-        width: 450px;
-        margin-left: 20px;
-
+    .menu a {
+        font-size: 40px;
+        margin: 0;
     }
 
     .block_menu {
@@ -682,19 +612,31 @@ input[type=checkbox]:checked + label:before {
 
     /*---Каталог---*/
 
+    .glav_post {
+        display: none;
+    }
+
+    p.text-razdel {
+        font-size: 50px;
+    }
+
     .offer {
         margin-left: 0;
         margin-right: 0;
         min-width: 850px;
         margin-top: 100px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 0 40px grey;
     }
 
-    .offer img {
-        width: 75%;
+    button {
 
-    }
-
-
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-radius: 80px;
+    font-size: 50px;
+    margin: 80px 0 50px 0;
+}
 
     /*---Футер---*/
 
@@ -711,7 +653,6 @@ input[type=checkbox]:checked + label:before {
     }
 
     .smm {
-        border-top: solid grey  2px;
         margin-bottom: 10px;
         margin-top: 50px;
     }
