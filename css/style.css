@@ -640,7 +640,7 @@ input[type=checkbox]:checked + label:before {
     padding-top: 26px;
     padding-bottom: 26px;
     border-radius: 80px;
-    font-size: 50px;
+    font-size: 40px;
     margin: 80px 0 50px 0;
 }
 
