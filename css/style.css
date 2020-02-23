@@ -101,9 +101,9 @@ footer {
 }
 
 .container_text {
-    padding-left: 20%;
-    padding-right: 20%;
-    width: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
     height: auto;
 }
 
@@ -167,8 +167,12 @@ h1 {
 
 .text-razdel{
     text-transform: uppercase;
-    /*font-family: StolzMedium;*/
     font-size: 50px;
+}
+
+.text-razdel-page {
+    text-transform: uppercase;
+    font-size: 32px;
 }
 
 .line {
@@ -192,6 +196,7 @@ h1 {
 }
 
 .zag_page {
+    font-family: StolzlMedium;
     font-size: 24px;
     margin: 50px 0 0 0;
     text-align: left;
@@ -219,6 +224,10 @@ h1 {
 .text_page {
     text-indent: 55px;
     font-size: 18px;
+    font-family: StolzLight;
+    letter-spacing: normal;
+    line-height: 1.88;
+    text-align: justify;
 }
 
 .check_page {
@@ -363,6 +372,7 @@ background: rgba(0,0,0,0.1);
 }
 
 button {
+    max-width: 250px;
     text-align: center;
     color: white;
     width: 70%;
@@ -375,6 +385,21 @@ button {
     margin: 40px 0 20px 0;
     font-weight: bold;
     cursor: pointer;
+}
+
+.author {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin: 35px 0 35px 0;
+}
+
+.author img {
+    max-width: 65px;
+    margin: 10px 20px 10px 0;
+}
+
+.author p {
+    font-family: StolzLight;
 }
 
 /*---------Рекомендации----------*/
@@ -485,9 +510,9 @@ input[type=checkbox]:checked + label:before {
     }
 
     .container_text {
-        padding-left: 12%;
-        padding-right: 13%;
-        width: 75%;
+        padding-left: 7%;
+        padding-right: 8%;
+        width: 85%;
         height: auto;
     }
 
@@ -622,7 +647,7 @@ input[type=checkbox]:checked + label:before {
         display: none;
     }
 
-    p.text-razdel {
+    p.text-razdel, p.text-razdel-page {
         font-size: 50px;
     }
 
@@ -636,14 +661,32 @@ input[type=checkbox]:checked + label:before {
     }
 
     button {
-
+    max-width: 500px;
     padding-top: 26px;
     padding-bottom: 26px;
     border-radius: 80px;
     font-size: 40px;
     margin: 80px 0 50px 0;
-}
+    }
 
+    .author img {
+        max-width: 150px;
+        margin: 30px 40px 30px 0;
+    }
+
+    .author p {
+        font-family: StolzLight;
+        font-size: 40px;
+    }
+
+    .text_page {
+        text-indent: 55px;
+        font-size: 48px;
+    }
+
+    .zag_page {
+    font-size: 50px;
+    }
     /*---Футер---*/
 
     footer img {
