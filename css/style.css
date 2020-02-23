@@ -557,6 +557,10 @@ input[type=checkbox]:checked + label:before {
         text-transform: uppercase;
     }
 
+    .data{
+        padding-top: 30px;
+    }
+
     .check_page {
         color: black;
         margin-bottom: 45px;
@@ -608,7 +612,9 @@ input[type=checkbox]:checked + label:before {
         border-color: white;
     }
 
-
+    nav{
+        padding-bottom: 50px;
+    }
 
     /*---Каталог---*/
 
