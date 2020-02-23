@@ -110,10 +110,12 @@ footer {
 .gorizont {
     width: 100%;
     background-color: black;
+    margin-top: -5px;
 }
 
 .gorizont_footer {
     width: 100%;
+    margin-bottom: -5px;
 }
 
 /*---------FLEX----------*/
@@ -301,13 +303,22 @@ display: none;
     width: 180px;
 }
 
-.vipad_menu, .vipad_menu_mob {
-
-    border-bottom: solid #dcdcdc 1px;
-    padding: 10px 0 10px 0;
-    display: none;
+.error{
+    font-size: 34px;
+    font-family: StolzLight; 
+    align-items: center;
+    margin-top: 40px;
 }
 
+.error_text {
+    padding-left: 10px ;
+    border-left: 1px solid black;
+}
+
+.error_number{
+    padding-right: 10px;
+    font-size: 60px;
+}
 
 
 /*---------Каталог----------*/
@@ -349,7 +360,7 @@ background: rgba(0,0,0,0.1);
     padding-bottom: 30px;
 }
 
-.offer {
+.offer, .offer_page {
     width: 28%;
     margin: 50px 20px 0 20px;
     min-width: 220px;
@@ -367,7 +378,15 @@ button:hover {
 background: rgba(0,0,0,0.1);
 }
 
+.offer_page:hover {
+    background: rgba(0,0,0,0.1);
+}
+
 .offer img {
+    width: 100%;
+}
+
+.offer_page img {
     width: 100%;
 }
 
@@ -503,6 +522,10 @@ input[type=checkbox]:checked + label:before {
         width: 40%
     }
 
+    .offer_page{
+        width: 28px;
+    }
+
     .text-razdel{
         text-transform: uppercase;
         /*font-family: StolzMedium;*/
@@ -578,7 +601,7 @@ input[type=checkbox]:checked + label:before {
     }
 
     .zag_offer {
-        margin: 40px 0 25px 0;
+        margin: 40px 0 40px 0;
         text-transform: uppercase;
     }
 
@@ -593,7 +616,20 @@ input[type=checkbox]:checked + label:before {
         padding-left: 75px;
     }
 
+    .error{
+        font-size: 48px;
+        margin-top: 160px;
+    }
 
+    .error_text {
+        padding-left: 25px ;
+        border-left: 3px solid black;
+    }
+
+    .error_number{
+        padding-right: 25px;
+        font-size: 100px;
+    }
 
     /*---Меню---*/
 
@@ -651,7 +687,7 @@ input[type=checkbox]:checked + label:before {
         font-size: 50px;
     }
 
-    .offer {
+    .offer, .offer_page {
         margin-left: 0;
         margin-right: 0;
         min-width: 850px;
